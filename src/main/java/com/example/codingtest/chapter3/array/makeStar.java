@@ -1,4 +1,4 @@
-package com.example.codingtest.array;
+package com.example.codingtest.chapter3.array;
 
 import java.sql.Array;
 import java.util.ArrayList;
