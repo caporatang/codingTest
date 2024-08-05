@@ -1,4 +1,4 @@
-package com.example.codingtest.chapter4.string;
+package com.example.codingtest.programmers_book.chapter4.string;
 
 /**
  * packageName : com.example.codingtest.chapter4.string

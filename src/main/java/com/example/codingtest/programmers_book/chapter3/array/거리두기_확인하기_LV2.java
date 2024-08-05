@@ -1,4 +1,4 @@
-package com.example.codingtest.chapter3.array;
+package com.example.codingtest.programmers_book.chapter3.array;
 
 public class 거리두기_확인하기_LV2 {
     // 개발자를 희망하는 죠르디는 카카오에 면접을 보러왔다.

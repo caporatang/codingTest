@@ -1,4 +1,4 @@
-package com.example.codingtest.chapter3.array.삼각_달팽이;
+package com.example.codingtest.programmers_book.chapter3.array.삼각_달팽이;
 
 public class TriangleSnail {
     // 삼각 달팽이

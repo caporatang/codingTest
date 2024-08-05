@@ -1,4 +1,4 @@
-package com.example.codingtest.chapter3.array.삼각_달팽이;
+package com.example.codingtest.programmers_book.chapter3.array.삼각_달팽이;
 
 public class triangleSnailImprovement {
     // 코드 개선 :  몇번 다시 풀어봅시다.
