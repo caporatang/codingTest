@@ -27,7 +27,6 @@ public class BasicLinkedList<T> {
         }
     }
 
-
     public void addNode(T data) {
         if(head == null) {
             // head 가 null 이면 가장 앞에 있는 Node가 없는거니까 head에 data를 할당.
@@ -64,15 +63,50 @@ public class BasicLinkedList<T> {
         }
     }
 
+
+    /*
+     * 특정 node 뒤에 데이터를 끼워넣는 method
+     * data : 추가할 data
+     * isData : 기존 데이터(특정 node)
+     * */
+    public void addNodeInside(T data, T isData) {
+        Node<T> searchedNode = this.search(isData);
+
+        if(searchedNode == null) {
+            this.addNode(data);
+        } else {
+            Node<T> nextNode = searchedNode.next;
+            searchedNode.next = new Node<T>(data);
+            searchedNode.next.next = nextNode;
+        }
+    }
+
+    public Node<T> search(T data) {
+        if(this.head == null) {
+            return null;
+        } else {
+            Node<T> node = this.head;
+            while(node != null) {
+                if(node.data == data) {
+                    return node;
+                } else {
+                    node = node.next;
+                }
+            }
+            return null;
+        }
+    }
+
+
+
     public static void main(String[] args) {
         BasicLinkedList<Integer> testLinkedList = new BasicLinkedList<>();
         testLinkedList.addNode(1);
         testLinkedList.addNode(2);
         testLinkedList.addNode(3);
-        testLinkedList.addNode(4);
 
-        System.out.println(testLinkedList.head.next.data);
-        System.out.println(testLinkedList.head.next.next.data);
+        testLinkedList.addNodeInside(5, 1);
 
+        testLinkedList.printAll();
     }
 }
